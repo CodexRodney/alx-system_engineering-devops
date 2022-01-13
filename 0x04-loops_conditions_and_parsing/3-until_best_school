@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# displays school ten times using until loop
+
+i=1
+
+until [ $i -gt 10 ]
+do
+	echo Best School
+	let i+=1
+done
