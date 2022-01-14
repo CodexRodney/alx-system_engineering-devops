@@ -3,8 +3,9 @@
 # in a list format where
 # only the part of the name after 1st dash is displayed
 
-list=$(ls)
-for i in $list
+current_dir=$(PWD)
+z=$(ls $current_dir | cut -d '-' -f2 )
+for i in $z
 do
-	echo "$i" | cut -d '-' -f2
+	echo $i
 done
