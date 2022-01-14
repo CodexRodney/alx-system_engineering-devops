@@ -6,18 +6,18 @@
 
 for i in {1..100}
 do
-	let z=$i%3 
-	let p=$i%5
+	let z=i%3 
+	let p=i%5
 	if [[ $z -eq 0 && $p -eq 0 ]]
 	then
-		echo FizzBuzz
+		echo 'FizzBuzz'
 	elif [ $p -eq 0 ]
 	then
-		echo Buzz
+		echo 'Buzz'
 	elif [ $z -eq 0 ]
 	then
-		echo Fizz
+		echo 'Fizz'
 	else
 		echo $i
-	fi
+	fighhgf
 done
