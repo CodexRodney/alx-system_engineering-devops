@@ -19,5 +19,5 @@ do
 		echo 'Fizz'
 	else
 		echo $i
-	fighhgf
+	fi
 done
