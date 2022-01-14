@@ -8,15 +8,15 @@ do
 	if [ $i -eq 4 ]
 	then
 		echo $i
-		echo bad luck from China
+		echo 'bad luck from China'
 	elif [ $i -eq 9 ]
 	then
 		echo $i
-		echo bad luck from Japan
+		echo 'bad luck from Japan'
 	elif [ $i -eq 17 ]
 	then
 		echo $i
-		echo bad luck from Italy
+		echo 'bad luck from Italy'
 	else
 		echo $i
 	fi
