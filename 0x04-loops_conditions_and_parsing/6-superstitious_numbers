@@ -16,10 +16,10 @@ do
 	elif [ $i -eq 17 ]
 	then
 		echo $i
-		echo bad luck from italy
+		echo bad luck from Italy
 	else
 		echo $i
 	fi
 
-	let i+=1
+	((i+=1))
 done
