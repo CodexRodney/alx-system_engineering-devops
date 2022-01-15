@@ -4,8 +4,8 @@
 # only the part of the name after 1st dash is displayed
 
 current_dir=$(PWD)
-z=$(ls $current_dir | cut -d '-' -f2 )
+z=$(ls "$current_dir" | cut -d '-' -f2 )
 for i in $z
 do
-	echo $i
+	echo "$i"
 done
