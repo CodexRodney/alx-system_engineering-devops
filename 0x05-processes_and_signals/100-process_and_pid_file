@@ -16,7 +16,10 @@ while true
 do
 	echo "To infinity and beyond"
 	sleep 2
-	trap 'echo "I hate the kill command" && killer'SIGTERM 
+	trap 'echo "I hate the kill command"' SIGTERM 
 	trap 'echo "Y U no love me?!"' SIGINT
-	trap 'killer' SIGQUIT
+	trap 'rm /var/run/myscript' SIGQUIT
+	trap 'rm /var/run/myscript' SIGTERM
+	trap 'exit' SIGQUIT
+	trap 'exit' SIGTERM
 done
