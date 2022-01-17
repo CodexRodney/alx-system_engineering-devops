@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Does the following
+# Creates file /var/run/myscript.pid
+# Displays infinity and beyond indefinately
+# Displays a message when receiving SIGTERM or SIGINT
+# Deletes /var/run/myscript.pid when receiving SIGTERM or SIGKILL
+
+touch /var/run/myscript.pid
+echo "$$" > /var/run/myscript.pd
+while true
+do
+	echo "To infinity and beyond"
+	trap 'echo"I hate the kill command"' SIGTERM
+	trap 'echo"Y U no love me?!"' SIGINT
+	trap 'rm /var/run/myscript.pid' SIGQUIT
+	trap 'rm /var/run/myscript.pid' SIGTERM
+done
