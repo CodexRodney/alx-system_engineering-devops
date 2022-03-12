@@ -2,5 +2,5 @@
 
 exec {'killer':
   command     => 'pkill -f killmeow',
-  environment => '/usr/bin',
+  environment => '/usr/bin:/usr/local/bin/:/bin/',
 }
