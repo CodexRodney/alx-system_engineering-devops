@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Configure your Nginx server to have a custom page 404 page that contain
+# the string Ceci n'est pas une page
 
 apt-get update
 apt-get install -y nginx
