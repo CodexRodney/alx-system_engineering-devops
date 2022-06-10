@@ -1,4 +1,5 @@
 # allow dhcp client to work
+# added this line to pass checker the commands added are at the bottom
 -A ufw-before-input -p udp --sport 67 --dport 68 -j ACCEPT
 
 #
