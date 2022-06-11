@@ -1,4 +1,6 @@
-apt-get update
+#!/usr/bin/env bash
+# Configures Nginx custom HTTP response headerapt-get update
+
 apt-get install -y nginx
 
 mkdir -p /var/www/html
