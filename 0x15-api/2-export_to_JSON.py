@@ -42,4 +42,3 @@ if __name__ == "__main__":
 
     with open(file_name, 'w') as jsonfile:
         json.dump(new_dict_2, jsonfile)
-
