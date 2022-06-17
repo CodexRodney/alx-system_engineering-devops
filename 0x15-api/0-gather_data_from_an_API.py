@@ -38,8 +38,8 @@ if __name__ == "__main__":
                     uncompleted_tasks = uncompleted_tasks + 1
 
     total_tasks = completed_tasks + uncompleted_tasks
-    print("Employee {} is done with tasks({}/{}):". \
-        format(user_name, completed_tasks, total_tasks))
+    str_1 = "Employee {} is done with tasks({}/{}):" \
+        .format(user_name, completed_tasks, total_tasks)
+    print(str_1)
     for w in jobs_done:
         print("\t {}".format(w))
-

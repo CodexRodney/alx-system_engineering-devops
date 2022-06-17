@@ -33,13 +33,14 @@ if __name__ == "__main__":
         for i in body_2:
             new_dict = {}
             if i["userId"] == int(user_id):
-                new_dict["userId"] = str(i["userId"])
+                new_dict["userId"] = i["userId"]
                 new_dict["username"] = user_name
-                new_dict["completed"] = str(i["completed"])
+                new_dict["completed"] = i["completed"]
                 new_dict["title"] = i["title"]
                 new_list.append(new_dict)
 
     new_dict_keys = ["userId", "username", "completed", "title"]
     with open(file_name, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=new_dict_keys)
+        writer = csv.DictWriter(csvfile, fieldnames=new_dict_keys,
+                                quoting=csv.QUOTE_ALL)
         writer.writerows(new_list)

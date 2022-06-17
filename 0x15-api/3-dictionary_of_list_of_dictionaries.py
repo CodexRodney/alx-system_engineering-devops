@@ -38,6 +38,7 @@ if __name__ == "__main__":
                     new_dict["task"] = i["title"]
                     new_list.append(new_dict)
             new_dict_2[str(z)] = new_list
+            new_list = []
 
     with open(file_name, 'w') as jsonfile:
         json.dump(new_dict_2, jsonfile)
