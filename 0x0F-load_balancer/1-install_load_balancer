@@ -9,7 +9,7 @@ server_config=\
 frontend we0102
         bind *:80
         mode http
-        default_backend kenmind-alx_back
+        default_backend web_backend
 backend web_backend
         balance roundrobin
         server 1687-web-01 44.192.38.157:80 check
