@@ -1,5 +1,5 @@
 <img src="https://giphy.com/gifs/filmeditor-disney-pixar-3o6wrvdHFbwBrUFenu" />
-<iframe src="https://giphy.com/embed/3o6wrvdHFbwBrUFenu" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/filmeditor-disney-pixar-3o6wrvdHFbwBrUFenu">via GIPHY</a></p>
+<img src="https://giphy.com/embed/3o6wrvdHFbwBrUFenu" width="480" height="260"/>
 #MY FIRST POSTMORTEM
  * Author: Rodney Mwanje
  * Address: rodney002mwanje@gmail.com
